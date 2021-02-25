@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  followers: 1
+  id: 1
+  message: MyText
+  sentiment: 1.5
+  user_handle: MyString
+
+two:
+  followers: 1
+  id: 1
+  message: MyText
+  sentiment: 1.5
+  user_handle: MyString
