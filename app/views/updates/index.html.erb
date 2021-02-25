@@ -1,1 +1,15 @@
 <h1>Updates</h1>
+
+<div class="updates">
+  <% @updates.each do |update| %>
+    <article class="tweet">
+      <header>
+        <%= update["user_handle"] %>
+      </header>
+        <p><%= update["message"] %></p>
+      <footer>
+        <%= update["created_at"][0, 10] %>
+      </footer>
+    </article>
+  <% end %>
+</div>
