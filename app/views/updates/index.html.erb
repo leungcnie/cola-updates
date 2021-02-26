@@ -4,17 +4,6 @@
   <h3>Percentage of updates containing coke keywords: <%= @percentage %>%</h3>
 </div>
 
-<div class="updates">
-  <% @updates.each do |update| %>
-    <article class="tweet">
-      <header>
-        <%= update["user_handle"] %>
-      </header>
-        <p><%= update["message"] %></p>
-        <%= update["sentiment"] %>
-      <footer>
-        <%= update["created_at"].to_s[0, 10] %>
-      </footer>
-    </article>
-  <% end %>
+<div class="updates-container">
+  <%= render @updates %>
 </div>

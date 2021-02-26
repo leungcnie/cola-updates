@@ -1,0 +1,10 @@
+    <article class="update">
+      <header>
+        <%= update.user_handle %>
+      </header>
+        <p><%= update.message %></p>
+        <%= update.sentiment %>
+      <footer>
+        <%= update.created_at.to_s[0, 10] %>
+      </footer>
+    </article>
