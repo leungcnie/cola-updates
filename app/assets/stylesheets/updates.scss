@@ -7,3 +7,19 @@ article {
   margin: 1em;
   padding: 1em;
 }
+
+.sentiment {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article:hover .sentiment {
+  display: flex;
+  color: blue;
+  font-weight: bold;
+}
